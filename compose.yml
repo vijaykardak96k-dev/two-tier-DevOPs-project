@@ -7,5 +7,5 @@ services:
 
  backend:
   build: "node-app/"
-   ports:
+  ports:
     - "3000:3000"
