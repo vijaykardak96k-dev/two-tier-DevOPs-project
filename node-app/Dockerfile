@@ -1,9 +1,8 @@
 # Use official Node.js image
 FROM node:alpine
-RUN init -y
 # Create app directory
 WORKDIR /app
-
+RUN npm init -y
 # Copy package files
 COPY package*.json ./
 
