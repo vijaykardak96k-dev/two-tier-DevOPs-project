@@ -1,6 +1,6 @@
 # Use official Node.js image
 FROM node:alpine
-
+RUN init -y
 # Create app directory
 WORKDIR /app
 
@@ -9,7 +9,7 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm install
-
+RUN npm install express
 RUN npm install cors
 
 # Copy app source
